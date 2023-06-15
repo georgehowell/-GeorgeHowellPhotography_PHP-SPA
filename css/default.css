@@ -1,0 +1,391 @@
+* {
+    box-sizing: border-box;
+}
+
+html { 
+    background:#000 url(img/wallpaper.jpg) 50% 0% no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+.form_submitb {
+    font-weight: normal; font-size: 11px; color: #FFFFFF; 
+    border-top-style: groove; font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    border-right-style: ridge;
+    border-left-style: groove; background-color: #AA2808;
+    border-bottom-style: ridge;
+}
+
+.form_tfield{
+    font-weight: normal; font-size: 11px; color: #000000;
+    border-top-style: groove; font-style: normal; 
+    font-family: Arial, Helvetica, sans-serif;
+    border-right-style: ridge; border-left-style: groove;
+    background-color: #FFFFFF; border-bottom-style: ridge;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+  
+    
+h1, h2, h3 {
+    color: #AA2808;
+}
+
+h3 {
+    color: #000000;
+}
+h3.bottom-nav {
+    margin: 10px 0 0 0;
+}
+
+ h4 {
+    font: 200%;
+}
+
+p, blockquote, ul, ol {
+    margin-bottom: 20px;
+    line-height: 1.5em;
+}
+
+a {
+    text-decoration: none;
+    color: #323B51;
+}
+
+a.data {
+    text-decoration: underline;
+    color: yellow;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #FF0000;
+}
+
+.mb-0 {margin-bottom: 0;}
+
+/* Wrapper */
+
+/* #wrapper {
+} */
+
+/* Header */
+
+#header {
+    width: 710px;
+    height: 96px;
+    margin: 0 auto;
+    background: url(img/img05.png) no-repeat left bottom;
+}
+
+/* Logo */
+
+#logo {
+    float: left;
+    padding: 20px 0 0 15px;
+}
+
+#logo h1 {
+    margin: 0;
+    padding: 5;
+    font: italic 36px "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+#logo h2 {
+    margin: -5px 0 0 0;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 10px;
+    text-align: right;
+    font-weight: bold;
+    color: #D4C792;
+    background-color: #303947;
+}
+
+#logo a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/* Menu */
+
+#menu {
+    float: right;
+    padding-right: 10px;
+}
+
+#menu ul {
+    margin: 0;
+    padding: 50px 0 0 0;
+    list-style: none;
+    line-height: normal;
+}
+
+#menu li {
+    display: inline;
+}
+
+#menu a {
+    display: block;
+    float: left;
+    width: 110px;
+    height: 20px;
+    margin: 0;
+    padding: 10px 0 0 0;
+    background: url(img/img02.png);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: bold;
+    color: #FFFFFF;
+    line-height: 2px;
+}
+
+#menu a:hover, #menu .active a {
+    background-image: url(img/img03.png);
+    color: #AA2808;
+} 
+
+/* Page */
+
+#page {
+    width: 710px;
+    margin: 0 auto;
+    background: #D4C792 url(img/img04.png) repeat-y;
+}
+
+/* Content */
+
+#content {
+    float: left;
+    min-width: 410px;
+    min-height: 480px;
+    padding: 10px 0 0 20px;
+    
+}
+
+#content a {
+    color: #003b6d;
+    text-decoration: none;
+}
+
+#content a:hover {
+    text-decoration: none;
+    color: #FF0000;
+}
+
+#content2, #portfolio {
+    float: left;
+    width: 388px;
+    padding: 5px 0 0 25px ;
+    text-align: center;
+}
+#portfolio {
+  width:419px;
+}
+
+#content h1, #content h2, #content h3 {
+    margin: 0 0 10px 0;
+}
+
+#content h1 {
+    font-size: 136%;
+}
+
+#content h2 {
+    font-size: 107%;
+}
+
+#content h3 {
+    font: 92%;
+}
+#content h4 {
+    font: 200%;
+}
+
+#content ul, #content ol {
+    list-style-position: inside;
+}
+
+#content .boxed {
+    float: left;
+    width: 46%;
+    padding-right: 2%;
+}
+
+#content iframe.homepage {
+    width: 410px;
+    height: 500px;
+    /* clip-path: inset(3px 2px 0 3px); */
+}
+
+
+/* Sidebar */
+
+#sidebar {
+    float: right;
+    width: 230px;
+    padding: 0 35px 0 0;
+}
+
+#sidebar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: normal;
+}
+
+#sidebar li {
+    margin-bottom: 1px;
+    padding: 10px 0;
+}
+
+
+#sidebar li li {
+    margin: 0;
+    padding: 5px 10px;
+    border: none;
+}
+
+#sidebar h2 {
+    padding: 5px 10px;
+    border-bottom: 1px dotted #FFFFFF;
+    font-size: 100%;
+    color: #D4C792;
+}
+
+#sidebar h3 {
+    font-size: 77%;
+    color: #D4C792;
+   
+}
+
+#sidebar p {
+    margin: 0;
+    line-height: normal;
+    color: #D4C792;
+}
+
+#sidebar a {
+    border: none;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#sidebar a:hover {
+    text-decoration: underline;
+}
+
+/* Submenu */
+
+/* #submenu {
+} */
+
+/* News */
+
+/* #news {
+} */
+
+#news a {
+    font-size: 85%;
+}
+
+/* Footer */
+
+#footer {
+    width: 710px;
+    height: 50px;
+    margin: 0 auto;
+    padding: 40px 0 0 0;
+    background: url(img/img06.png) no-repeat;
+    color: #FFFFFF;
+}
+
+#footer p {
+    margin: 0;
+    text-align: center;
+    font-size: 77%;
+}
+
+#footer a {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+#footer a:hover {
+    text-decoration: none;
+    color: #F00;
+    font-size: 20px;
+}
+table.aatable { 
+    font-family:arial;
+    font-size:10pt;
+    width:400px;
+      
+}
+
+th {
+    font-size:10pt;
+    color:white;
+    text-align:left;
+}
+
+
+/* tr { 
+} */
+
+td {  
+   font-size:9pt;
+   padding: 0 4px 0 0;
+   text-align:left;
+}
+
+#note
+{  
+    font-size:7pt;    
+    color:black;     
+}
+#UILabel {  
+    font-size:8pt;    
+    color:#AA2808;     
+}
+.imageThumbnail {
+    float:left;
+    padding-right:3px;
+}
+.firstCol {
+    padding-left:0px;
+    border:solid 0px #FF0000;
+}
+
+
+
+.exhibition-list {
+    padding: 0 15px;
+}
+.exhibition-list h4 {
+    margin: 10px 0;
+}
+.exhibition-list i {
+    position: relative;
+    top: -5px;
+}
+.exhibition-list .button {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #323c52;
+    font-size: 13px;
+}
+.exhibition-list .button:hover {
+    opacity: 1;
+    color: #00f;
+}

@@ -1,0 +1,105 @@
+.button {
+    background: none;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    font-family: Montserrat, serif;
+    font-size: 20px;
+    padding: 0;
+    transition: opacity .2s ease-in-out;
+}
+
+.overlay {
+    align-items: start;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    pointer-events: none;
+    transition: background-color 200ms ease-in-out;
+}
+.overlay__card {
+    margin-top: 92px;
+    border-radius: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 18px;
+    position: relative;
+    opacity: 0;
+    background-color: #e7ebff;
+    background-image: radial-gradient(circle, #e7ebff 0%, #3e4f70 35%, #3e4f70 65%, #e7ebff 100%);
+    transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
+    transform: translateY(50px);
+}
+.overlay__close {
+    cursor: pointer;
+    opacity: .2;
+    font-size: 22px;
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    background-color: #000;
+    position: absolute;
+    right: 3px;
+    color: #fff;
+    top: 3px;
+    line-height: 12px;
+    padding: 3px;
+    box-shadow: 0 0 4px #f00;
+    transition: opacity 200ms ease-in-out;
+}
+
+.overlay--active {
+    background-color: rgba(0,0,0,0.6);
+    pointer-events: all;
+    /* z-index: 9; */
+}
+
+
+
+.overlay--active .overlay__card {
+    opacity: 1;
+    z-index: 9;
+}
+
+.overlay__header,
+.overlay__text {
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity .5s ease-in-out, transform .5s ease-in-out;
+    transform: translateY(15px);
+}
+.overlay__header {
+    transition-delay: 250ms;
+}
+.overlay__text {
+    transition-delay: 500ms;
+}
+
+.overlay--active .overlay__card,
+.overlay--active .overlay__header,
+.overlay--active .overlay__text {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+
+/* Hover */
+
+.button:hover {
+    opacity: .6;
+}
+
+.overlay__close:hover {
+    opacity: 1;
+    width: 22px;
+    height: 22px;
+    font-size: 28px;
+    padding: 4px;
+    line-height: 14px;
+    right: 2px;
+    top: 2px;
+}
+
